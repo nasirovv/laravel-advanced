@@ -24,7 +24,7 @@ class IncomeFactory extends Factory
         return [
             'amount' => rand(100, 9999) + rand(1, 100)/ 100,
             'description' => $this->faker->text(50),
-            'user_id' => 2,
+            'user_id' => 1,
         ];
     }
 }

@@ -10,7 +10,7 @@ class TransactionController extends Controller
 {
 
     public function index(){
-        $taxes = (new TransactionService())->calculateTaxes(2);
+        $taxes = (new TransactionService())->calculateTaxes(1);
 
         return response()->json($taxes, 200);
     }
