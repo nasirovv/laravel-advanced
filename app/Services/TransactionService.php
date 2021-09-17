@@ -30,4 +30,21 @@ class TransactionService {
         return $taxes;
     }
 
+//    public function calculateTaxes($userId){
+//        $user = User::find($userId);
+//        if(!$user || !$user->isTaxed){
+//            $taxes = 0;
+//        }
+//
+//        $income = Income::where('user_id', $userId)
+//            ->sum('amount');
+//        if($income > 50000){
+//            $taxes = $income * 0.2;
+//        }else{
+//            $taxes = $income * 0.15;
+//        }
+//
+//        return $taxes;
+//    }
+
 }
